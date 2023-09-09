@@ -1,0 +1,103 @@
+/* Style for the container div */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #c56161;
+  }
+  
+  /* Style for the form container */
+  .form-container {
+    width: 80%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Style for form elements */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+  }
+  
+  /* Style for input fields */
+  input[type="text"],
+  select {
+    width: 30%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Style for the "Calculate" button */
+  #calculateButton {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #calculateButton:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style for the result */
+  #totalTuition {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Add some colors to the form elements */
+  label {
+    color: #060606;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Style for select dropdown */
+  select {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+  }
+  
+  /* Style for school dropdown */
+  #school {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    color: #333;
+  }
+  
+  /* Style for program dropdown */
+  #program {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    color: #333;
+  }
+  
+  body {
+    background-image: url('https://media.bizj.us/view/img/998331/0911umassboston.jpg');
+    background-size: cover; /* Adjust this as needed */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.9; /* Adjust the opacity as needed */
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Background color with opacity */
+    border-radius: 10px;
+  }

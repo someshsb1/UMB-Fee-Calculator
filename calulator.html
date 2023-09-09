@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Fees Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>UMB Grad Programs Fees Calculator</h1>
+        <form id="feeCalculator">
+            <label for="school">School:</label>
+            <select id="school" name="school">
+                <option value="School for the Environment">School for the Environment</option>
+                <option value="College of Management">College of Management</option>
+                <option value="College of Nursing and Health Sciences">College of Nursing and Health Sciences</option>
+                <option value="College of Liberal Arts">College of Liberal Arts</option>
+                <option value="College of Education and Human Development">College of Education and Human Development</option>
+                <option value="College of Science and Mathematics">College of Science and Mathematics</option>
+                <option value="McCormack Graduate School of Policy and Global Studies">McCormack Graduate School of Policy and Global Studies</option>
+                <option value="School for Global Inclusion and Social Development">School for Global Inclusion and Social Development</option>
+                <!-- Add more school options here -->
+            </select>
+            <br>
+            <label for="program">Program:</label>
+            <select id="program" name="program"></select>
+
+            <label for="Credits">Credits:</label>
+            <input type="number" id="minCredits" name="minCredits" min="1" value="9">
+            <label for="tuitionType">Tuition Type:</label>
+            <select id="tuitionType" name="tuitionType">
+                <option value="InState">In-State</option>
+                <option value="OutState">Out-State</option>
+                <option value="NE Regional Discount">NE Regional Discount</option>
+                <!-- Add more tuition type options here -->
+            </select>
+            <br>
+            <label for="tuitionFees">Tuition Fees:</label>
+            <input type="number" id="tuitionFees" name="tuitionFees" value="12936.33">
+            <br>
+            <label for="newStudentFee">New Student Fee:</label><ol>390</ol>
+            <br>
+            <label for="collegeSpecificFee">College Specific Fee:</label>
+            <input type="number" id="collegeSpecificFee" name="collegeSpecificFee" value="0">
+            <br>
+            <label for="idFee">ID Fee:</label>
+            <ol>75</ol>
+            <br>
+            <label for ="TechFee">Technology Fee:</label>
+            <ol>187.56</ol>
+            <br>
+            <label for ="StudentActivityFee">Student Activity Fee:</label>
+            <ol>39.6</ol>
+            <br>
+            <button type="button" id="calculateButton">Calculate</button>
+        </form>
+        <div class="result">
+            <label>Total Tuition:</label>
+            <span id="totalTuition">13401.33</span>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

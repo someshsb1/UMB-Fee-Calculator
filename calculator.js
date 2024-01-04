@@ -6,24 +6,20 @@ const collegeSpecificFee = {
   
   // Function to calculate total tuition
   function calculateTotalTuition() {
-    const tuitionFees = parseFloat(document.getElementById("tuitionFees").value);
-    const newStudentFee = 390;
+    // const tuitionFees = parseFloat(document.getElementById("tuitionFees").value);
     const selectedSchool = document.getElementById("school").value;
     const collegeSpecificFeeInput = parseFloat(collegeSpecificFee[selectedSchool]) || 0;
-    const idFee = 75;
-    const TechFee = 187.56;
-    const StudActFee = 39.6;
     const minCredits = parseInt(document.getElementById("minCredits").value);
     const selectedTuitionType = document.getElementById("tuitionType").value;
   
     let totalTuition = 0;
   
     if (selectedTuitionType === "NE Regional Discount") {
-      totalTuition = 1575.05 * minCredits + newStudentFee + collegeSpecificFeeInput + idFee + TechFee + StudActFee - (minCredits * 162.92);
+      totalTuition = 1575.05 * minCredits - (minCredits * 162.92);
     } else if (selectedTuitionType === "InState") {
-      totalTuition = 806.92 * minCredits + newStudentFee + collegeSpecificFeeInput + idFee + TechFee + StudActFee;
+      totalTuition = 806.92 * minCredits;
     } else if (selectedTuitionType === "OutState") {
-      totalTuition = 1575.05 * minCredits + newStudentFee + collegeSpecificFeeInput + idFee + TechFee + StudActFee;
+      totalTuition = 1575.05 * minCredits;
     }
   
     document.getElementById("totalTuition").textContent = totalTuition.toFixed(2);
